@@ -1,5 +1,19 @@
+.under {
+  width: 200px;
+  height: 2px;
+  background: #FF5555;
+  padding: 2px;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto; }
+
+p {
+  font-size: 1.3em; }
+
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
   body #bg {
     position: absolute;
     left: 0;
@@ -7,7 +21,7 @@ body {
     height: auto;
     z-index: -1; }
     body #bg img {
-      height: 79vh; }
+      height: 85vh; }
 
 header {
   display: flex;
@@ -31,7 +45,7 @@ header {
         color: white; }
 
 main .hero {
-  height: 50vh; }
+  height: 61vh; }
   main .hero__cont {
     margin: 120px 40px; }
   main .hero__h1 {
@@ -39,7 +53,7 @@ main .hero {
     margin-bottom: 20px;
     color: white; }
   main .hero__p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 20px;
     color: white; }
   main .hero__btn {
@@ -50,5 +64,27 @@ main .hero {
     color: white;
     border-color: white;
     font-size: 1.5em; }
+
+.services .ser__h1 {
+  text-align: center; }
+.services__info {
+  text-align: center;
+  padding: 0 20%; }
+.services__cont ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap; }
+  .services__cont ul .service {
+    width: 33%;
+    padding: 40px;
+    box-sizing: border-box; }
+    .services__cont ul .service img {
+      width: 100%;
+      height: 100px; }
+    .services__cont ul .service h3 {
+      text-align: center; }
+    .services__cont ul .service p {
+      text-align: center;
+      font-size: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */
