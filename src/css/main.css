@@ -1,3 +1,6 @@
+.btn-primary {
+  background: #4371b2; }
+
 .under {
   width: 200px;
   height: 2px;
@@ -19,6 +22,7 @@ body {
     left: 0;
     top: 0;
     height: auto;
+    width: 100%;
     z-index: -1; }
     body #bg img {
       height: 85vh; }
@@ -41,7 +45,7 @@ header {
       header nav ul li {
         flex-grow: 1;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 18px;
         color: white; }
 
 main .hero {
@@ -71,11 +75,8 @@ main .hero {
   text-align: center;
   padding: 0 20%; }
 .services__cont ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap; }
+  list-style: none; }
   .services__cont ul .service {
-    width: 33%;
     padding: 40px;
     box-sizing: border-box; }
     .services__cont ul .service img {
@@ -86,5 +87,76 @@ main .hero {
     .services__cont ul .service p {
       text-align: center;
       font-size: 1.3em; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap; }
+  .projects__header {
+    background: #4371b2;
+    width: 20%;
+    position: relative; }
+    .projects__header h3 {
+      position: absolute;
+      font-size: 5em;
+      transform: rotate(270deg);
+      top: 200px;
+      left: -40px;
+      padding: 0;
+      margin: 0; }
+  .projects__cont {
+    width: 80%; }
+    .projects__cont ul {
+      list-style: none;
+      padding: 0; }
+      .projects__cont ul .project {
+        height: 700px;
+        margin-top: 50px; }
+        .projects__cont ul .project img {
+          width: 100%;
+          padding: 100px 10% 20px;
+          box-sizing: border-box; }
+        .projects__cont ul .project .deatils .project__name {
+          margin: 40px 0 10px;
+          text-align: center; }
+        .projects__cont ul .project .deatils ul {
+          padding: 20px 50px 0; }
+          .projects__cont ul .project .deatils ul li {
+            margin: 15px 0; }
+        .projects__cont ul .project p {
+          font-size: 18px;
+          padding: 10px 50px; }
+
+.technologies {
+  margin: 90px 0; }
+  .technologies h2 {
+    text-align: center; }
+  .technologies p {
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 20%; }
+  .technologies .tech__cont {
+    display: flex;
+    border: 1px solid #4371b2; }
+    .technologies .tech__cont .type {
+      width: 30%;
+      background: #4371b2;
+      margin-right: 40px; }
+      .technologies .tech__cont .type ul {
+        list-style: none;
+        padding: 0; }
+        .technologies .tech__cont .type ul li:nth-child(1) {
+          background: white; }
+        .technologies .tech__cont .type ul li {
+          padding: 20px 40px;
+          font-size: 1.3em; }
+    .technologies .tech__cont .icons {
+      width: 70%; }
+      .technologies .tech__cont .icons img {
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+        transition: 0.3s; }
+      .technologies .tech__cont .icons img:hover {
+        transform: scale(1.2) rotate(360deg); }
 
 /*# sourceMappingURL=main.css.map */

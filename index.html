@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hagre | home </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel='stylesheet' href="src/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/main.css">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div id="bg">
         <img src="src/img/red%20background%20softdev_main-01.svg" alt=".">
     </div>
     <header>
         <div class="logo">
-           <img src="src/img/hagre.svg" alt="">
+            <img src="src/img/hagre.svg" alt="">
         </div>
         <nav>
             <ul>
@@ -27,13 +29,15 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <div class="hero">
             <div class="hero__cont">
-                <div class="hero__h1">Custom Softweare Development</div>
+                <div class="hero__h1">Custom Software Development</div>
                 <div class="hero__p">lets revele you business potential with amazing softwear.</div>
                 <div class="hero__btn">learn more.</div>
+                
+                <img src="src/img/python.svg" alt="">
             </div>
         </div>
         <div class="services">
@@ -44,41 +48,156 @@
             </p>
             <div class="services__cont">
                 <ul>
-                    <li class="service">
-                        <img src="src/img/monitor%20png%20Senior%20engineers.svg" alt="">
-                        <h3>custom software</h3>
-                        <p>With deep expertise in full-cycle of corporate software development. we improves and automates businesses with unmatched enterprise applications.</p>
-                    </li>
-                    <li class="service">
-                        <img src="src/img/web_apps.svg" alt="">
-                        <h3>web app development</h3>
-                        <p>Get your many functional modern web app and websites with amazing ui.</p>
-                    </li>
-                    <li class="service">
-                        <img src="src/img/api.svg" alt="">
-                        <h3>apis</h3>
-                        <p>Do you want to integrate you business with external or if you want to have your api lets talk about it.</p>
-                    </li>
-                    <li class="service">
-                        <img src="src/img/growth.svg" alt="">
-                        <h3>Web scraping</h3>
-                        <p>We make the internet your database. By scraping meaningful data form any website you want </p>
-                    </li>
-                    <li class="service">
-                        <img src="src/img/e%20commerce_hover.svg" alt="">
-                        <h3>Ecommerce</h3>
-                        <p>Follow the latest trends and demands in ecommerce software development providing the best shopping experience to your clients.</p>
-                    </li>
-                    <li class="service">
-                        <img src="src/img/design.svg" alt="">
-                        <h3>UI/UX</h3>
-                        <p>Create customized website interfaces or android ui that reflect your company’s dedication.</p>
-                    </li>
+                    <div class="row">
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/monitor%20png%20Senior%20engineers.svg" alt="">
+                            <h3>custom software</h3>
+                            <p>With deep expertise in full-cycle of corporate software development. we improves and automates businesses with unmatched enterprise applications.</p>
+                        </li>
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/web_apps.svg" alt="">
+                            <h3>web app development</h3>
+                            <p>Get your many functional modern web app and websites with amazing ui.</p>
+                        </li>
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/api.svg" alt="">
+                            <h3>apis</h3>
+                            <p>Do you want to integrate you business with external or if you want to have your api lets talk about it.</p>
+                        </li>
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/growth.svg" alt="">
+                            <h3>Web scraping</h3>
+                            <p>We make the internet your database. By scraping meaningful data form any website you want </p>
+                        </li>
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/e%20commerce_hover.svg" alt="">
+                            <h3>Ecommerce</h3>
+                            <p>Follow the latest trends and demands in ecommerce software development providing the best shopping experience to your clients.</p>
+                        </li>
+                        <li class="col-md-4 col-sm-6 service">
+                            <img src="src/img/design.svg" alt="">
+                            <h3>UI/UX</h3>
+                            <p>Create customized website interfaces or android ui that reflect your company’s dedication.</p>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
+        <hr>
+        <br>
+
+        <div class="projects project">
+            <div class="projects__header">
+                <h3>PROJECTS</h3>
+            </div>
+            <div class="projects__cont">
+                <ul>
+                    <li class="container project">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="src/img/projects/about-02.png" alt="project">
+                            </div>
+                            <div class="col-md-5 deatils">
+                                <h4 class="project__name">freelancer website</h4>
+                                <span class="under"></span>
+                                <ul>
+                                    <li>Type : <strong>website</strong></li>
+                                    <li>bulid with: <strong>bootsrtap 4</strong></li>
+                                    <a class="btn btn-info">live</a>
+                                    <a class="btn btn-primary"> view on github</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>We made this website for freelancer like you to Look More Professional, Stand Out From The Crowd, Show Your Personality, Display Your Services and Prices, Host Your Portfolio or  Build An Email List.</p>
+                    </li>
+                    <li class="container project">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="src/img/projects/admin.png" alt="project">
+                            </div>
+                            <div class="col-md-5 deatils">
+                                <h4 class="project__name">hospital management system</h4>
+                                <span class="under"></span>
+                                <ul>
+                                    <li>Type : <strong>system</strong></li>
+                                    <li>bulid with: <strong>python 3, django, bootstrap4</strong></li>
+                                    <a class="btn btn-info">live</a>
+                                    <a class="btn btn-primary"> view on github</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>The hospital management system (HMS) is an integrated software that handles different directions of clinic workflows. It manages the smooth healthcare performance along with administrative, medical, legal and financial control.</p>
+                    </li>
+                    <li class="container project">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="src/img/projects/dennis.png" alt="project">
+                            </div>
+                            <div class="col-md-5 deatils">
+                                <h4 class="project__name">crm</h4>
+                                <span class="under"></span>
+                                <ul>
+                                    <li>Type : <strong>website</strong></li>
+                                    <li>bulid with: <strong>django and sqlite</strong></li>
+                                    <a class="btn btn-info">live</a>
+                                    <a class="btn btn-primary"> view on github</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>used to manage many customer deliverys and automate the store management system.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="technologies">
+            <h2>Technologies we use</h2>
+            <span class="under"></span>
+            <P>We employ the proven combination of the latest and classic trusted technologies, having the following 
+Technology stack as our basis 
+</P>
+            
+            <div class="tech__cont">
+                <div class="type">
+                    <ul>
+                        <li>all</li>
+                        <li>back-end</li>
+                        <li>front-end</li>
+                        <li>database</li>
+                        <li>design</li>
+                    </ul>
+                </div>
+                <div class="icons row">
+                   <img src="src/img/python/python-original.svg" class='' alt="">
+                    <img src="src/img/django/django-original.svg" class='' alt="">
+                    <img src="src/img/atom/atom-original.svg" class='' alt="">
+                    <img src="src/img/bootstrap/bootstrap-plain.svg" class='' alt="">
+                    <img src="src/img/docker/docker-original.svg" class='' alt="">
+                    <img src="src/img/git/git-original.svg" class='' alt="">
+                    <img src="src/img/github/github-original.svg" class='' alt="">
+                    <img src="src/img/heroku/heroku-original.svg" class='' alt="">
+                    <img src="src/img/html5/html5-original.svg" class='' alt="">
+                    <img src="src/img/illustrator/illustrator-line.svg" class='' alt="">
+                    <img src="src/img/javascript/javascript-original.svg" class='' alt="">
+                    <img src="src/img/jquery/jquery-original.svg" class='' alt="">
+                    <img src="src/img/mysql/mysql-original.svg" class='' alt="">
+                    <img src="src/img/npm/npm-original-wordmark.svg" class='' alt="">
+                    <img src="src/img/trello/trello-plain.svg" class='' alt="">
+                    <img src="src/img/sass/sass-original.svg" class='' alt="">
+                    <img src="src/img/wordpress/wordpress-original.svg" class='' alt="">
+                    <img src="src/img/visualstudio/visualstudio-plain.svg" class='' alt="">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
     </main>
 
-  </body>
+</body>
+<script src="src/lib/jquery/jquery.min.js"></script>
+<script src="src/lib/bootstrap/js/bootstrap.js"></script>
+<script src="src/js/main.js"></script>
 
 </html>
