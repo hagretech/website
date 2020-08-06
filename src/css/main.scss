@@ -58,6 +58,9 @@ body {
 
 header {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     width: 100%;
 
@@ -70,6 +73,7 @@ header {
     nav {
         width: 70%;
         padding: $padding;
+
 
         ul {
             margin: 0;
@@ -89,10 +93,15 @@ header {
 
 main {
     .hero {
-        height: 61vh;
+        height: 81vh;
+        background: url('../img/hero.svg') no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
         &__cont {
-            margin: $padding *6 $padding *2;
+            margin: 0 $padding *2;
         }
 
         &__h1 {
@@ -135,7 +144,7 @@ main {
     &__cont {
         ul {
             list-style: none;
-
+            padding: 0;
 
             .service {
                 padding: $padding *2;
@@ -191,7 +200,7 @@ main {
         ul {
             list-style: none;
             padding: 0;
-
+            
             .project {
                 height: 700px;
                 margin-top: 50px;

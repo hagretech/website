@@ -32,6 +32,9 @@ body {
 
 header {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   width: 100%; }
   header .logo img {
@@ -52,9 +55,14 @@ header {
         color: white; }
 
 main .hero {
-  height: 61vh; }
+  height: 81vh;
+  background: url("../img/hero.svg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
   main .hero__cont {
-    margin: 120px 40px; }
+    margin: 0 40px; }
   main .hero__h1 {
     font-size: 3.6em;
     margin-bottom: 20px;
@@ -78,7 +86,8 @@ main .hero {
   text-align: center;
   padding: 0 20%; }
 .services__cont ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
   .services__cont ul .service {
     padding: 40px;
     box-sizing: border-box; }
