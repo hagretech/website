@@ -43,12 +43,14 @@ body {
         top: 0;
         height: auto;
         width: 100%;
+        overflow-x: hidden;
         z-index: -1;
 
 
         img {
             height: 85vh;
-            
+            width: 100%;
+            overflow-x: hidden;
         }
     }
 

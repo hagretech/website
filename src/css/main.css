@@ -23,9 +23,12 @@ body {
     top: 0;
     height: auto;
     width: 100%;
+    overflow-x: hidden;
     z-index: -1; }
     body #bg img {
-      height: 85vh; }
+      height: 85vh;
+      width: 100%;
+      overflow-x: hidden; }
 
 header {
   display: flex;
