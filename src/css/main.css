@@ -1,6 +1,9 @@
 .btn-primary {
   background: #4371b2; }
 
+.show {
+  opacity: 1; }
+
 .under {
   width: 200px;
   height: 2px;
@@ -12,7 +15,7 @@
   margin: 0 auto; }
 
 p {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 body {
   margin: 0;
@@ -30,29 +33,50 @@ body {
       width: 100%;
       overflow-x: hidden; }
 
-header {
-  display: flex;
+header nav {
+  background: none;
   position: absolute;
+  right: 0;
   top: 0;
+  width: 50%; }
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    padding: 20px 0; }
+    header nav ul li {
+      flex-grow: 1;
+      text-align: center;
+      margin: 0 10px; }
+      header nav ul li a {
+        color: white; }
+      header nav ul li a:hover {
+        color: black; }
+header .logo {
+  position: absolute;
   left: 0;
-  justify-content: space-between;
-  width: 100%; }
+  top: 0; }
   header .logo img {
     width: 150px;
     margin: 20px; }
-  header nav {
-    width: 70%;
-    padding: 20px; }
-    header nav ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      list-style: none; }
-      header nav ul li {
-        flex-grow: 1;
-        text-align: center;
-        font-size: 18px;
-        color: white; }
+header .button {
+  width: 60px;
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  right: 30px;
+  display: none;
+  cursor: pointer;
+  background: white;
+  border-radius: 8px;
+  padding: 7px;
+  text-align: center; }
+  header .button span {
+    height: 6px;
+    display: block;
+    background: rgba(72, 58, 58, 0.82);
+    margin: 3px;
+    border-radius: 10px; }
 
 main .hero {
   height: 81vh;
@@ -60,7 +84,8 @@ main .hero {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  min-height: 590px !important; }
   main .hero__cont {
     margin: 0 40px; }
   main .hero__h1 {
@@ -68,7 +93,7 @@ main .hero {
     margin-bottom: 20px;
     color: white; }
   main .hero__p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 20px;
     color: white; }
   main .hero__btn {
@@ -80,25 +105,27 @@ main .hero {
     border-color: white;
     font-size: 1.5em; }
 
-.services .ser__h1 {
-  text-align: center; }
-.services__info {
-  text-align: center;
-  padding: 0 20%; }
-.services__cont ul {
-  list-style: none;
-  padding: 0; }
-  .services__cont ul .service {
-    padding: 40px;
-    box-sizing: border-box; }
-    .services__cont ul .service img {
-      width: 100%;
-      height: 100px; }
-    .services__cont ul .service h3 {
-      text-align: center; }
-    .services__cont ul .service p {
-      text-align: center;
-      font-size: 1.3em; }
+.services {
+  margin-top: 40px; }
+  .services .ser__h1 {
+    text-align: center; }
+  .services__info {
+    text-align: center;
+    padding: 0 20%; }
+  .services__cont ul {
+    list-style: none;
+    padding: 0; }
+    .services__cont ul .service {
+      padding: 40px;
+      box-sizing: border-box; }
+      .services__cont ul .service img {
+        width: 100%;
+        height: 100px; }
+      .services__cont ul .service h3 {
+        text-align: center; }
+      .services__cont ul .service p {
+        text-align: center;
+        font-size: 1.2em; }
 
 .projects {
   display: flex;
@@ -121,8 +148,7 @@ main .hero {
       list-style: none;
       padding: 0; }
       .projects__cont ul .project {
-        height: 700px;
-        margin-top: 50px; }
+        margin-top: 100px; }
         .projects__cont ul .project img {
           width: 100%;
           padding: 100px 10% 20px;
@@ -134,8 +160,14 @@ main .hero {
           padding: 20px 50px 0; }
           .projects__cont ul .project .deatils ul li {
             margin: 15px 0; }
+        .projects__cont ul .project h5 {
+          padding: 40px 40px 0; }
+        .projects__cont ul .project span.summary {
+          margin: 0;
+          width: 80px;
+          margin: 0 40px; }
         .projects__cont ul .project p {
-          font-size: 18px;
+          font-size: 17px;
           padding: 10px 50px; }
 
 .technologies {
@@ -144,11 +176,13 @@ main .hero {
     text-align: center; }
   .technologies p {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     padding: 2px 20%; }
   .technologies .tech__cont {
     display: flex;
-    border: 1px solid #4371b2; }
+    border: 1px solid #4371b2;
+    width: 70%;
+    margin: 0 auto; }
     .technologies .tech__cont .type {
       width: 30%;
       background: #4371b2;
@@ -159,16 +193,86 @@ main .hero {
         .technologies .tech__cont .type ul li:nth-child(1) {
           background: white; }
         .technologies .tech__cont .type ul li {
-          padding: 20px 40px;
-          font-size: 1.3em; }
+          padding: 20px 30px;
+          font-size: 1.2em; }
     .technologies .tech__cont .icons {
       width: 70%; }
       .technologies .tech__cont .icons img {
-        width: 100px;
-        padding: 10px;
-        margin: 10px;
-        transition: 0.3s; }
+        transition: 0.3s;
+        padding: 20px;
+        max-width: 100px; }
       .technologies .tech__cont .icons img:hover {
         transform: scale(1.2) rotate(360deg); }
+
+footer {
+  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+  background: #4371b2; }
+  footer .cont {
+    padding: 80px 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .cont h4 {
+      padding-top: 20px; }
+    footer .cont ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex;
+      padding: 0;
+      list-style: none; }
+      footer .cont ul li {
+        width: 100%;
+        padding: 10px; }
+        footer .cont ul li a {
+          color: black; }
+  footer p {
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    margin: 0; }
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em; }
+
+  p {
+    font-size: 1.3em !important; }
+
+  main .hero__h1 {
+    font-size: 2.2em; }
+
+  .technologies p {
+    padding: 15px; }
+  .technologies .tech__cont {
+    width: 100%; }
+
+  .projects__header {
+    width: 10%; }
+    .projects__header h3 {
+      font-size: 4em; }
+  .projects__cont {
+    width: 90%; } }
+@media screen and (max-width: 600px) {
+  header .button {
+    display: inline-block; }
+  header nav {
+    opacity: 0;
+    margin-top: 80px;
+    background: rgba(0, 0, 0, 0.71);
+    border-radius: 10px;
+    transition: 0.5s; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap; }
+      header nav ul li {
+        width: 100%;
+        padding: 10px; }
+        header nav ul li a:hover {
+          color: white; }
+
+  .technologies .tech__cont .type ul {
+    padding: 0; }
+    .technologies .tech__cont .type ul li {
+      padding: 20px 5px; } }
 
 /*# sourceMappingURL=main.css.map */

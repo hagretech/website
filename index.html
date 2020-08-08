@@ -11,23 +11,28 @@
 </head>
 
 <body>
-<!--
-    <div id="bg">
-        <img src="src/img/red%20background%20softdev_main-01.svg" alt=".">
-    </div>  -->
-    <header>
-        <div class="logo">
-            <img src="src/img/hagre.svg" alt="">
+    <header id="header">
+        <div class="button" id="button">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
         </div>
-        <nav>
-            <ul>
-                <li>services</li>
-                <li>projects</li>
-                <li>about</li>
-                <li>contact</li>
-                <li>blog</li>
+
+        <nav id='nav' class=''>
+            <ul >
+                <li><a href="#services">services</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact us</a></li>
+                <li><a href="http://github.com/hagretech">github</a></li>
             </ul>
         </nav>
+
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <img src="src/img/hagre.svg" alt="">
+            </a>
+        </div>
+
     </header>
 
     <main>
@@ -38,7 +43,7 @@
                 <div class="hero__btn">learn more.</div>
             </div>
         </div>
-        <div class="services">
+        <div class="services" id="services">
             <h1 class="ser__h1">Custom Software we make </h1>
             <span class="under"></span>
             <p class="services__info ">
@@ -63,7 +68,7 @@
                             <p>Do you want to integrate you business with external or if you want to have your api lets talk about it.</p>
                         </li>
                         <li class="col-md-4 col-sm-6 service">
-                            <img src="src/img/growth.svg" alt="">
+                            <img src="src/img/scrapy.svg" alt="">
                             <h3>Web scraping</h3>
                             <p>We make the internet your database. By scraping meaningful data form any website you want </p>
                         </li>
@@ -84,7 +89,7 @@
         <hr>
         <br>
 
-        <div class="projects project">
+        <div class="projects project" id="projects">
             <div class="projects__header">
                 <h3>PROJECTS</h3>
             </div>
@@ -106,7 +111,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <p>We made this website for freelancer like you to Look More Professional, Stand Out From The Crowd, Show Your Personality, Display Your Services and Prices, Host Your Portfolio or  Build An Email List.</p>
+                        <h5>Summary</h5>
+                        <span class="under summary"></span>
+                        <p>We made this website for freelancer like you to Look More Professional, Stand Out From The Crowd, Show Your Personality, Display Your Services and Prices, Host Your Portfolio or Build An Email List.</p>
+                        <hr>
                     </li>
                     <li class="container project">
                         <div class="row">
@@ -124,7 +132,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <h5>Summary</h5>
+                        <span class="under summary"></span>
                         <p>The hospital management system (HMS) is an integrated software that handles different directions of clinic workflows. It manages the smooth healthcare performance along with administrative, medical, legal and financial control.</p>
+                        <hr>
                     </li>
                     <li class="container project">
                         <div class="row">
@@ -142,7 +153,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <h5>Summary</h5>
+                        <span class="under summary"></span>
                         <p>used to manage many customer deliverys and automate the store management system.</p>
+                        <hr>
                     </li>
 
                 </ul>
@@ -150,52 +164,75 @@
         </div>
         <div class="container">
             <div class="technologies">
-            <h2>Technologies we use</h2>
-            <span class="under"></span>
-            <P>We employ the proven combination of the latest and classic trusted technologies, having the following 
-Technology stack as our basis 
-</P>
-            
-            <div class="tech__cont">
-                <div class="type">
-                    <ul>
-                        <li>all</li>
-                        <li>back-end</li>
-                        <li>front-end</li>
-                        <li>database</li>
-                        <li>design</li>
-                    </ul>
-                </div>
-                <div class="icons row">
-                   <img src="src/img/python/python-original.svg" class='' alt="">
-                    <img src="src/img/django/django-original.svg" class='' alt="">
-                    <img src="src/img/atom/atom-original.svg" class='' alt="">
-                    <img src="src/img/bootstrap/bootstrap-plain.svg" class='' alt="">
-                    <img src="src/img/docker/docker-original.svg" class='' alt="">
-                    <img src="src/img/git/git-original.svg" class='' alt="">
-                    <img src="src/img/github/github-original.svg" class='' alt="">
-                    <img src="src/img/heroku/heroku-original.svg" class='' alt="">
-                    <img src="src/img/html5/html5-original.svg" class='' alt="">
-                    <img src="src/img/illustrator/illustrator-line.svg" class='' alt="">
-                    <img src="src/img/javascript/javascript-original.svg" class='' alt="">
-                    <img src="src/img/jquery/jquery-original.svg" class='' alt="">
-                    <img src="src/img/mysql/mysql-original.svg" class='' alt="">
-                    <img src="src/img/npm/npm-original-wordmark.svg" class='' alt="">
-                    <img src="src/img/trello/trello-plain.svg" class='' alt="">
-                    <img src="src/img/sass/sass-original.svg" class='' alt="">
-                    <img src="src/img/wordpress/wordpress-original.svg" class='' alt="">
-                    <img src="src/img/visualstudio/visualstudio-plain.svg" class='' alt="">
-                    
+                <h2>Technologies we use</h2>
+                <span class="under"></span>
+                <P>We employ the proven combination of the latest and classic trusted technologies, having the following
+                    Technology stack as our basis
+                </P>
+
+                <div class="tech__cont">
+                    <div class="type">
+                        <ul>
+                            <li>all</li>
+                            <li>back-end</li>
+                            <li>front-end</li>
+                            <li>database</li>
+                            <li>design</li>
+                        </ul>
+                    </div>
+                    <div class="icons row">
+                        <img src="src/img/python/python-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/django/django-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/atom/atom-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/bootstrap/bootstrap-plain.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/docker/docker-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/git/git-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/github/github-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/heroku/heroku-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/html5/html5-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/illustrator/illustrator-line.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/javascript/javascript-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/jquery/jquery-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/mysql/mysql-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/npm/npm-original-wordmark.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/trello/trello-plain.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/sass/sass-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/wordpress/wordpress-original.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                        <img src="src/img/visualstudio/visualstudio-plain.svg" class='col-md-3 col-sm-3 col-xs-3' alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        
+        <footer>
+            <div class="cont">
+                <div class="footer__services">
+                   <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact us</a></li>
+                        <li><a href="http://github.com/hagretech">profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                   <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#about"><i class="fa fa-facebook"></i>facebook</a></li>
+                        <li><a href="#projects"><i class="fa fa-facebook"></i>github</a></li>
+                        <li><a href="#contact"><i class="fa fa-facebook"></i>telegram</a></li>
+                        <li><a href="http://github.com/hagretech"><i class="fa fa-facebook"></i>twitter</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <p>copyright hagre tech 2020 </p>
+        </footer>
     </main>
-
+    <script src="src/lib/jquery/jquery.min.js"></script>
+    <script src="src/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="src/lib/easing/easing.min.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
-<script src="src/lib/jquery/jquery.min.js"></script>
-<script src="src/lib/bootstrap/js/bootstrap.js"></script>
-<script src="src/js/main.js"></script>
+
 
 </html>

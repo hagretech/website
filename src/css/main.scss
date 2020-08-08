@@ -7,17 +7,22 @@ $color: (primary : #4371b2,
 $padding : 20px;
 $border: 1px solid black;
 $radius:5px;
-$p-font:1.3em;
-$sm-font:18px;
+$p-font:1.2em;
+$sm-font:17px;
 
 @function color($color-name) {
     @return map-get($color, $color-name);
 }
 
 
-.btn-primary{
+.btn-primary {
     background: color(primary);
 }
+
+.show {
+    opacity: 1;
+}
+
 .under {
     width: 200px;
     height: 2px;
@@ -36,6 +41,8 @@ p {
 body {
     margin: 0;
     overflow-x: hidden;
+
+
 
     #bg {
         position: absolute;
@@ -57,39 +64,80 @@ body {
 }
 
 header {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    width: 100%;
-
-    .logo img {
-        width: 150px;
-        margin: 20px;
-    }
-
 
     nav {
-        width: 70%;
-        padding: $padding;
-
+        background: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
 
         ul {
-            margin: 0;
+            list-style: none;
             padding: 0;
             display: flex;
-            list-style: none;
+            padding: $padding 0;
+
+
 
             li {
                 flex-grow: 1;
                 text-align: center;
-                font-size: $sm-font;
-                color: color(txt-w)
+                margin: 0 10px;
+
+                a {
+                    color: white;
+                }
+
+                a:hover {
+                    color: black;
+                }
+
             }
         }
     }
+
+    .logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: 150px;
+            margin: 20px;
+        }
+    }
+
+    .button {
+
+        width: 60px;
+        position: absolute;
+        z-index: 100;
+        top: 30px;
+        right: 30px;
+        display: none;
+        cursor: pointer;
+        background: white;
+        border-radius:8px;
+        padding: 7px;
+        text-align: center;
+        
+        
+
+        span {
+            height: 6px;
+            display: block;
+            background: rgba(72, 58, 58, 0.82);
+            margin: 3px ;
+            border-radius: 10px;
+            
+            
+        }
+    }
+
+
 }
+
 
 main {
     .hero {
@@ -99,6 +147,7 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
+        min-height: 590px !important;
 
         &__cont {
             margin: 0 $padding *2;
@@ -131,6 +180,9 @@ main {
 
 
 .services {
+    margin-top: 40px;
+
+
     .ser__h1 {
         text-align: center;
     }
@@ -200,10 +252,10 @@ main {
         ul {
             list-style: none;
             padding: 0;
-            
+
             .project {
-                height: 700px;
-                margin-top: 50px;
+
+                margin-top: 100px;
 
                 img {
                     width: 100%;
@@ -228,6 +280,16 @@ main {
                     }
                 }
 
+                h5 {
+                    padding: 40px $padding*2 0;
+                }
+
+                span.summary {
+                    margin: 0;
+                    width: 80px;
+                    margin: 0 $padding*2;
+                }
+
                 p {
                     font-size: $sm-font;
                     padding: 10px 50px;
@@ -240,56 +302,200 @@ main {
 
 }
 
-.technologies{
-    
+
+.technologies {
+
     margin: 90px 0;
-    h2{
+
+    h2 {
         text-align: center;
     }
-    p{
+
+    p {
         text-align: center;
         font-size: $sm-font;
-        padding:2px 20%;
+        padding: 2px 20%;
     }
-    
-    .tech__cont{
+
+    .tech__cont {
         display: flex;
-        border:1px solid color(primary);
-        
-        .type{
+        border: 1px solid color(primary);
+        width: 70%;
+        margin: 0 auto;
+
+        .type {
             width: 30%;
             background: color(primary);
             margin-right: 40px;
-            
-            ul{
+
+            ul {
                 list-style: none;
                 padding: 0;
-                
-                li:nth-child(1){
+
+                li:nth-child(1) {
                     background: white;
                 }
-                
-                li{
-                    padding: 20px 40px;
+
+                li {
+                    padding: 20px 30px;
                     font-size: $p-font
-                    
                 }
             }
         }
-        .icons{
+
+        .icons {
             width: 70%;
-            
-             
-            img{
-                width: 100px;
-                padding: 10px;
-                margin: 10px;
+
+
+            img {
                 transition: 0.3s;
+                padding: 20px;
+                max-width: 100px;
             }
-            img:hover{
+
+            img:hover {
                 transform: scale(1.2) rotate(360deg);
             }
         }
-        
+
+    }
+}
+
+
+footer {
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+    background: color(primary);
+
+
+    .cont {
+        padding: $padding*4 $padding*4 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h4 {
+            padding-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex;
+            padding: 0;
+            list-style: none;
+
+            li {
+                width: 100%;
+                padding: $padding/2;
+
+                a {
+                    color: black;
+                    ;
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.3em !important;
+    }
+
+    main {
+        .hero {
+            &__h1 {
+                font-size: 2.2em;
+            }
+        }
+    }
+
+    .technologies {
+        p {
+            padding: 15px;
+        }
+
+        .tech__cont {
+            width: 100%;
+        }
+    }
+
+    .projects {
+        &__header {
+            width: 10%;
+
+            h3 {
+                font-size: 4em;
+            }
+        }
+
+        &__cont {
+            width: 90%;
+
+            ul {
+                .project {}
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        .button {
+            display: inline-block;
+        }
+
+        nav {
+            opacity: 0;
+            margin-top: 80px;
+            background: rgba(0, 0, 0, 0.71);
+            border-radius: 10px;
+            transition: 0.5s;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 100%;
+                    padding: 10px;
+
+                    a:hover {
+                        color: white;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .technologies {
+        .tech__cont {
+            .type {
+                ul {
+                    padding: 0;
+
+                    li {
+                        padding: 20px 5px;
+                    }
+                }
+            }
+
+        }
     }
 }
