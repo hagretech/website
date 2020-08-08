@@ -7,6 +7,7 @@
     <title>Hagre | home </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel='stylesheet' href="src/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 
@@ -19,7 +20,7 @@
         </div>
 
         <nav id='nav' class=''>
-            <ul >
+            <ul>
                 <li><a href="#services">services</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact">contact us</a></li>
@@ -39,8 +40,10 @@
         <div class="hero">
             <div class="hero__cont">
                 <div class="hero__h1">Custom Software Development</div>
-                <div class="hero__p">lets revele you business potential with amazing softwear.</div>
-                <div class="hero__btn">learn more.</div>
+                <div class="hero__p">lets revele you business potential with amazing software.</div>
+                <a href="#services">
+                    <div class="hero__btn">learn more.</div>
+                </a>
             </div>
         </div>
         <div class="services" id="services">
@@ -203,10 +206,41 @@
                 </div>
             </div>
         </div>
+        <div class="contactus container" id="contact">
+            <h2>contact us</h2>
+            <span class="under"></span>
+            <ul>
+                <li>
+                    <strong>email</strong> : <a href="mailto:kiztopia.2020@gmail.com">kiztopia.2020@gmail.com</a>
+                </li>
+                <li>
+                    <strong>address</strong> : addid ababa
+                </li>
+                <li><strong>phone</strong> : 0963226638
+                </li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h4>or</h4>
+            <br>
+            <form id="my-form" action="https://formspree.io/xgenqwjd" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">message</label>
+                    <textarea name="message" class="form-control" id="textarea" rows="3" placeholder="say hi to us"></textarea>
+                </div>
+                <button id="my-form-button" class='btn btn-primary'>Submit</button>
+                <p id="my-form-status"></p>
+            </form>
+        </div>
         <footer>
             <div class="cont">
                 <div class="footer__services">
-                   <h4>Quick Links</h4>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#services">services</a></li>
                         <li><a href="#projects">projects</a></li>
@@ -215,15 +249,14 @@
                     </ul>
                 </div>
                 <div class="footer__links">
-                   <h4>Contact Us</h4>
+                    <h4>Contact Us</h4>
                     <ul>
-                        <li><a href="#about"><i class="fa fa-facebook"></i>facebook</a></li>
-                        <li><a href="#projects"><i class="fa fa-facebook"></i>github</a></li>
-                        <li><a href="#contact"><i class="fa fa-facebook"></i>telegram</a></li>
-                        <li><a href="http://github.com/hagretech"><i class="fa fa-facebook"></i>twitter</a></li>
+                        <li><a href="https://www.facebook.com/Hagre-tech-solutions-113642190391634/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://t.me/KirubelHagre"><i class="fa fa-telegram"></i></a></li>
+                        <li><a href="http://github.com/hagretech"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
-                
+
             </div>
             <p>copyright hagre tech 2020 </p>
         </footer>
