@@ -1,0 +1,445 @@
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Arial Unicode MS", sans-serif;
+    line-height: 1.4;
+    background: #f0f0f0;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+    font-weight: bolder
+}
+
+h4 {
+    font-size: 25px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('../images/preloader.svg') no-repeat center center;
+}
+
+i:hover {
+    color: #3b933b;
+}
+
+.container {
+    width: 100%;
+}
+
+.black {
+    background: black;
+    opacity: 0.7;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgba(92, 184, 92, 0.66);
+    color: #ffffff;
+    padding: 5px 3px;
+    font-size: 35px;
+    border-radius: 2px;
+    right: 15px;
+    width: 50px;
+    bottom: 25px;
+    transition: background 0.5s;
+}
+
+.back-to-top i {
+    color: darkred;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+}
+
+.back-to-top:focus {
+    background: rgba(92, 184, 92, 0.33);
+    color: rgba(96, 184, 92, 0.42);
+    outline: none;
+}
+
+.back-to-top:hover {
+    background: #03C4EB;
+    color: #fff;
+}
+
+#header{
+    background: black; 
+}
+/* the style for the hospital page */
+
+.app_info {
+    margin: 100px 10px;
+}
+
+.app_info .about {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.app_info .about .content {
+    width: 50%;
+    padding: 30px;
+}
+
+.app_info .about .content h3 {
+    text-align: center
+}
+
+.app_info .about img {
+    width: 50%;
+    padding: 20px;
+}
+
+.app_info .uses {
+    margin: 10px 10px 50px 10px;
+
+}
+
+.app_info .uses h3 {
+    text-align: center;
+}
+
+.app_info .uses ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app_info .uses ul li {
+    padding: 30px;
+    max-width: 50%;
+}
+
+.app_info .uses ul li i {
+    text-align: center;
+    display: block;
+    color: #4e86b6;
+    font-size: 40px;
+}
+
+.app_info .uses ul li h4 {
+    text-align: center;
+}
+
+.app_info .features {
+    margin-bottom: 0px;
+}
+.app_info .features h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.app_info .features ul {
+    list-style: none;
+}
+
+.app_info .features ul li {
+    margin-bottom: 300px;
+    position: relative;
+    margin-left: 7%;
+}
+
+.app_info .features ul li img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.app_info .features ul li div {
+    width: 60%;
+    background: #2c70aa;
+    height: 300px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    padding: 0 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.app_info .features ul li div:nth-child(1) {
+    background: #d89842;
+}
+
+.app_info .features ul li div h4 {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.app_info .features ul li div p {
+    color: white;
+}
+
+.projucts {
+    margin: 70px 0;
+}
+
+.projucts h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projucts p.main-p {
+    margin: 2px 1px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#contact .contact-intro h3 {
+    margin-top: 60px;
+    text-decoration: underline;
+    text-decoration-color: #4e86b6
+}
+
+#contact .contact-intro p {
+    margin-top: 20px;
+}
+
+#contact .con {
+    margin-top: 20px;
+}
+
+#contact .con .info div {
+    position: relative;
+}
+
+#contact .con .info i {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    color: #4e86b6;
+    font-size: 15px
+}
+
+#contact .contact-intro h3 {
+    margin-top: 60px;
+}
+
+#contact .contact-intro p {
+    margin-top: 15px;
+}
+
+#contact .con {
+    margin-top: 15px;
+}
+
+#contact .con .info div {
+    margin: 0 0 0 30px
+}
+
+#contact .con textarea {
+    height: 100px
+}
+
+#contact .con .btn {
+    padding: 5px;
+    background: #4e86b6;
+}
+
+footer {
+    margin-top: 0px;
+    background: #4e86b6;
+}
+
+footer p {
+    color: white;
+    font-family: cursive;
+}
+
+.back-to-top i {
+    color: black;
+}
+
+
+
+
+@media (max-width: 720px) {
+
+    p {
+        color: black;
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+
+    .app_info .about {
+        flex-wrap: wrap;
+    }
+
+    .app_info .about .content {
+        width: 100%;
+    }
+
+    .app_info .about img {
+        width: 100%;
+        padding: 30px 40px;
+    }
+
+    .app_info .uses ul li {
+        padding: 10px
+    }
+
+    .app_info .features ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .app_info .features ul li div {
+        left: 25%;
+        z-index: 1;
+    }
+
+    .app_info .features ul li img {
+        position: relative;
+        right: 10%;
+
+    }
+
+    #contact {
+        margin: 10px;
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    p {
+        color: black;
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+
+    .back-to-top {
+        bottom: 70px;
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block !important;
+    }
+    .app_info{
+        margin-top: 50px;
+    }
+    .app_info .about {
+        flex-wrap: wrap;
+    }
+
+    .app_info .about .content {
+        width: 100%;
+    }
+
+    .app_info .about img {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .app_info .uses ul li {
+        padding: 20px 10% ;
+        max-width: 100%;
+    }
+
+    .app_info .features ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .app_info .features ul li div {
+        left: 10%;
+        z-index: 1;
+        top: 90%;
+        width:80%;
+        height: auto;
+        padding-bottom: 25px;
+    }
+    .app_info .features ul li div h4{
+        padding-top: 20px;
+    }
+
+    .app_info .features ul li img {
+        position: relative;
+        right: 10%;
+
+    }
+
+
+    . #contact {
+        margin: 10px 0 0 0 !important;
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 240px) {
+    p {
+        font-size: 14px
+    }
+
+    h1 {
+        font-size: 22px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    h4 {
+        font-size: 18px !important;
+    }
+}
+
+/* 
+ for devices with small view port height
+
+
+

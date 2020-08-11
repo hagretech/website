@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .btn-primary {
   background: #4371b2; }
 

@@ -14,7 +14,9 @@ $sm-font:17px;
     @return map-get($color, $color-name);
 }
 
-
+* {
+    box-sizing: border-box
+}
 .btn-primary {
     background: color(primary);
 }
