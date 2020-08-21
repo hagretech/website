@@ -1,0 +1,223 @@
+$color: (primary : #4371b2,
+    txt-b: black,
+    txt-w:white,
+    primary2:#004976);
+
+
+$padding : 20px;
+$border: 1px solid black;
+$radius:5px;
+$p-font:1.2em;
+$sm-font:17px;
+h1,h2,h3,h4{
+    text-decoration: underline;
+}
+@function color($color-name) {
+    @return map-get($color, $color-name);
+}
+
+ul{
+    li{
+        margin-bottom: 10px;
+    }
+}
+.ad {
+    text-align: center;
+    background: rgb(31, 76, 120);
+    background: linear-gradient(0deg, rgba(31, 76, 120, 1) 0%, rgba(30, 133, 172, 1) 100%);
+    padding: 40px;
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+}
+.fa-check{
+    color: green;
+}
+main {
+    .hero {
+        background: rgb(31, 76, 120);
+        background: linear-gradient(0deg, rgba(31, 76, 120, 1) 0%, rgba(30, 133, 172, 1) 100%);
+
+        button {
+            border: 1px solid black;
+        }
+
+        .hero__cont {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            width:100%;
+
+            .hero__text {
+                margin: 30px auto;
+                flex-grow: 1;
+            }
+            h1{
+                text-decoration: none;
+            }
+            .hero__svg {
+                margin:  auto;
+
+                img {
+                    max-width: 450px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.why-not-cv {
+    margin-top: 80px;
+
+}
+
+.webguide{
+    &__cont{
+        padding-right: 50px;
+    }
+    margin-bottom: 100px;
+}
+.cv-vs-web {
+    margin-bottom: 100px;
+    
+
+    .table-info {
+
+        max-width: 500px;
+        margin: 10px auto;
+        border: 1px solid #979797;
+
+
+        ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            padding: 0;
+            background: white;
+
+            li {
+                flex-grow: 1;
+                width: 15%;
+                padding: 15px;
+                margin: 0;
+                border:1px solid black;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+
+            li:nth-child(1) {
+                width: 55%;
+                text-align: left;
+                display: block;
+
+            }
+        }
+
+        ul:nth-child(1) {
+            background: #b5b5b5;
+
+        }
+    }
+
+
+}
+
+.why-web {
+    
+    margin-bottom: 100px;
+    .why-web__cont{
+        padding-right: 50px;
+    }
+    h2 {
+        font-size: 2em;
+        
+    }
+
+
+
+    .lists {
+        ul {
+            list-style: square;
+            line-height: 200%;
+        }
+    }
+}
+
+.price {
+    margin-bottom: 100px;
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    &__cont {
+
+        h2 {
+            text-align: center;
+        }
+
+        .col-md-4 {
+            margin: 10px 0px;
+
+            div {
+                background: rgb(31, 76, 120);
+                background: linear-gradient(0deg, rgba(31, 76, 120, 1) 0%, rgba(30, 133, 172, 1) 100%);
+                margin: 10px 20px;
+                border-radius: 10px;
+                padding: 25px 10px;
+            }
+
+            ul {
+                padding: 0;
+                text-align: left;
+                list-style: none;
+                
+                
+                .ETB{
+                    text-align: center;
+                }
+                li {
+                    padding-left: 40px;
+                }
+            }
+        }
+
+    }
+}
+.guide{
+    padding: 10px 30px;
+}
+.from{
+    margin: 20px;
+    margin-bottom: 50px;
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-weight:  bold
+    }
+    ul{
+        padding: 0;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        
+        li{
+            flex-grow: 1;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+footer {
+    background: rgb(31, 76, 120);
+    background: linear-gradient(0deg, rgba(31, 76, 120, 1) 0%, rgba(30, 133, 172, 1) 100%);
+}

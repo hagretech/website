@@ -81,6 +81,13 @@ header .button {
     margin: 3px;
     border-radius: 10px; }
 
+p {
+  font-family: serif; }
+
+li {
+  font-family: serif;
+  font-size: 1.2rem; }
+
 main .hero {
   height: 81vh;
   background: url("../img/hero.svg") no-repeat;
