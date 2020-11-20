@@ -90,7 +90,7 @@ li {
 
 main .hero {
   height: 81vh;
-  background: url("../img/hero.svg") no-repeat;
+  background: url("https://github.com/hagretech/website/blob/master/src/img/light-1834289_1280.jpg") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: row;
